@@ -1,14 +1,13 @@
-# version: 6 -- 'black cat'
-# author: Mingdong Zhou
-# encoding: utf-8
-# the goal is to finish the task that
-# update the price per carrier per line to catapalt system
-# it need two input
+# Version: 6 -- 'black cat'
+# Author: Mingdong Zhou
+# Encoding: utf-8
+# The goal is to finish the task that
+# update the price per carrier per line to catapalt system.
+# It need two input,
 # both there path name must be fixed, one is carrier.csv
-# orther is rate.csv
-# the carrier.csv format must be one data element one line
-# the rate.csv must be do not have variable name
-# the object rate is a main dataframe
+# another is rate.csv.
+# The carrier.csv format must be one data element one line
+# and the rate.csv must be do not have variable name.
 library(readr)
 library(writexl)
 source('ifunc.R')
@@ -26,15 +25,8 @@ rate <-
     names = c("Carrier", "Effective.Date", "X20GP"))
 # task 1, select the relation where
 # the carrier need to update the price for them line
-handOfSelect <- FALSE
-for(i in seq(name)) {
-  handOfSelect <-
-    as.character(rate$Carrier) == codeName[i] |
-      handOfSelect
-}
-rate <- rate[which(handOfSelect), ] 
-rm(handOfSelect)
-rm(i)
+rate$Carrier <- as.character(rate$Carrier)
+rate <- Select(rate, id = "Carrier", set = codeName)
 # task 2, Date value task, thr rule is:
 # if the Effective.Date is small than today,
 # make it equal today
@@ -79,7 +71,7 @@ keyWord <- paste(codeName, updateContractId, sep = "_")
 # output 
 write.csv(keyWord, "keyword.csv", row.names = FALSE)
 write.csv(rate, "update.csv", row.names = FALSE)
-# message to stdout
+# Send message to stdout
 cat("Done! Outing in file keyword.csv and update.csv\n",
   date())
 rm(list=ls())

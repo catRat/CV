@@ -1,6 +1,6 @@
-GetCode <- function(carrier.name = 'cosco') {
-  # This function use to change the carrier short name to carrier code-name.
-  # It have a argument carrier.name that is a object of vector class, and character type.
+GetCode <- function(x = 'cosco') {
+  # Change the carrier name to carrier 
+  # code-name.
 	
   s <- c()
   for(i in seq(x)) {
@@ -26,11 +26,11 @@ GetCode <- function(carrier.name = 'cosco') {
   }
   return(s)
 }
-GetId <- function(carrier.code = 'COSU') {
-  # This function use to change the carrier code-name to contract id.
-  # It have a argument carrier.code that is a object of vector class, and character type.
-  # The element of carrier.code much be up letter.
-  s<-c()
+
+GetId <- function(x = 'COSU') {
+  # Change the carrier code-name to 
+  # contract id.
+  s <- c()
   for(i in seq(x)) {
     s[i] <- switch((x[i]),
       APLU = "EB18/1668",
