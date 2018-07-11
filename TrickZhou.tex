@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{xeCJK}
-\setmainfont{微软雅黑}
+\usepackage{verbatim}
+\setCJKmainfont{Noto Sans CJK SC}
 \pagestyle{plain}
 \begin{document}
 	\section*{Info}
@@ -11,4 +12,8 @@
 		\input{educationexperience.tex}
 	\section*{Work Experience}
 		\input{workexperience}
+	\section*{Code}
+		\verbatiminput{ifunc.R}	
+		\verbatiminput{Name.R}	
+		\verbatiminput{test6.R}	
 \end{document}
