@@ -1,6 +1,11 @@
 \documentclass{article}
 \usepackage{xeCJK}
-\usepackage{verbatim}
+\usepackage{listings}
+\lstset{
+	language=R,
+	basicstyle=\footnotesize\sffamily,
+	showstringspaces=false,
+	}
 \setCJKmainfont{Noto Sans CJK SC}
 \pagestyle{plain}
 \begin{document}
@@ -13,8 +18,8 @@
 	\section*{Work Experience}
 		\input{workexperience}
 	\section*{Code}
-		\verbatiminput{ifunc.R}	
-		\verbatiminput{Name.R}	
-		\verbatiminput{Select.R}
-		\verbatiminput{test6.R}	
+		\lstinputlisting{GetCode.R}	
+		\lstinputlisting{GetId.R}	
+		\lstinputlisting{Select.R}
+		\lstinputlisting{test6.R}	
 \end{document}
