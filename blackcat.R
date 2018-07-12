@@ -50,4 +50,4 @@ keyWord <- paste(codeName, contractId, sep = "_")
 write.csv(keyWord, "keyword.csv", row.names = FALSE)
 cat("Done! Outing in file keyword.csv and update.csv\n",
   date())
-rm(list=ls())
+rm(list = ls())
