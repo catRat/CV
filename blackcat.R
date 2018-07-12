@@ -32,7 +32,7 @@ rm(len)
 ContractId <- c()
 for(i in seq(dim(rate)[1])) {
   for(r in seq(codeName)) {
-    if(as.character(rate$Carrier[i]) == codeName[r]) {
+    if(rate$Carrier[i]) == codeName[r]) {
        ContractId[i] <- contractId[r]
     }
   }
