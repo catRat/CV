@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper]{book}
 \usepackage{xeCJK}
 \usepackage{verbatim}
 \usepackage{graphicx}
@@ -8,24 +8,32 @@
 \setCJKmainfont{宋体}
 \setCJKmonofont{微软雅黑}
 \pagestyle{plain}
+\title{个人简历}
+\author{周明东}
 \begin{document}
-	\section*{Info}
+	\frontmatter
+	\maketitle
+	%\include{preface}
+	\tableofcontents
+
+	\mainmatter
+	\section{Info}
 		\input{info.tex}
-	\section*{Skills}
+	\section{Skills}
 		\input{skills.tex}
-	\section*{Education Experience}
+	\section{Education Experience}
 		\input{educationexperience.tex}
-	\section*{Work Experience}
+	\section{Work Experience}
 		\input{workexperience}
-	\section*{Present}
+	\section{Present}
 		\input{present.tex}
-	\section*{Code Show}
-		利用 R 的数据结构和工具, 我能够高效地完成往往需要 VBA 才能完成的工作. 以下为为了完成某一数据处理工作而写的 R 脚本, 欢迎阅读. 我也可以写 Pyhont 脚本, 之所以不写, 是因为如果一个工具能够很好地完成某种任务, 为什么还要考虑其他工具.
+	\section{Code Show}
+		\input{summaryOfCode.tex}
 		\verbatiminput{GetCode.R}	
 		\verbatiminput{GetId.R}	
 		\verbatiminput{Select.R}
 		\verbatiminput{blackcat.R}	
-	\section*{Graph Show}
+	\section{Graph Show}
 		\begin{figure}
 		\begin{center}
 		\includegraphics{Rplot01}
