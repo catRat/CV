@@ -3,17 +3,23 @@
 \usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{pstricks}
 \hypersetup{colorlinks}
-%\setCJKmainfont{Noto Sans CJK SC}
 \setCJKmainfont{宋体}
-\setCJKmonofont{微软雅黑}
+\setCJKsansfont{微软雅黑}
 \pagestyle{plain}
-\title{个人简历}
-\author{周明东}
+\renewcommand{\maketitle}{\begin{titlepage}
+\begin{pspicture}(12, 9)
+\pspolygon*[linecolor=pink](0,0)(7,0)(7, 3)(0, 3)
+\end{pspicture}
+\begin{center}
+{\Large
+周明东的个人简历}
+\end{center}
+\end{titlepage}}
 \begin{document}
 	\frontmatter
 	\maketitle
-	%\include{preface}
 	\tableofcontents
 
 	\mainmatter
@@ -25,23 +31,19 @@
 		\input{skills.tex}
 	\section{教育经历}
 		\input{educationexperience.tex}
-	%\section{Code Show}
-		%\input{summaryOfCode.tex}
-		%\verbatiminput{GetCode.R}	
-		%\verbatiminput{GetId.R}	
-		%\verbatiminput{Select.R}
-		%\verbatiminput{blackcat.R}	
 	\section{数据图作品展示}
 		\begin{figure}
 		\begin{center}
-		\includegraphics{Rplot01}
-		\caption{带数据标签的着色的条形图}
+		\includegraphics[scale=0.4]{Rplot01}
+		\qquad
+		\includegraphics[scale=0.4]{Rplot13}
+		\caption{条形图}
 		\end{center}
 		\end{figure}
 		\begin{figure}
 		\begin{center}
-		\includegraphics{Rplot13}
-		\caption{用点的高度来替代条的高度}
+		\includegraphics[scale=0.3]{boplot.PNG}
+		\caption{箱线图}
 		\end{center}
 		\end{figure}
 \end{document}
