@@ -1,21 +1,25 @@
 \documentclass[a4paper]{book}
 \usepackage{xeCJK}
+\setCJKmainfont{宋体}
+\setCJKsansfont{黑体}
+\setCJKmonofont{宋体}
 \usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{pstricks}
+\usepackage{indetfirst}
 \hypersetup{colorlinks}
-\setCJKmainfont{宋体}
-\setCJKsansfont{微软雅黑}
 \pagestyle{plain}
+\makeindex
 \renewcommand{\maketitle}{\begin{titlepage}
 \begin{pspicture}(12, 9)
 \pspolygon*[linecolor=pink](0,0)(7,0)(7, 3)(0, 3)
 \end{pspicture}
 \begin{center}
-{\Large
+\sffamily{
+\linespread{2.0}\selectfont \Large
 周明东的个人简历 \par
-周明东}
+周明东 \par}
 \end{center}
 \end{titlepage}}
 \begin{document}
@@ -35,9 +39,9 @@
 	\section{数据图作品展示}
 		\begin{figure}
 		\begin{center}
-		\includegraphics[scale=0.4]{Rplot01}
+		\includegraphics[scale=0.45]{Rplot01}
 		\qquad
-		\includegraphics[scale=0.4]{Rplot13}
+		\includegraphics[scale=0.46]{Rplot13}
 		\caption{条形图}
 		\end{center}
 		\end{figure}
