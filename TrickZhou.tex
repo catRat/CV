@@ -2,7 +2,7 @@
 \usepackage{xeCJK}
 \setCJKmainfont{宋体}
 \setCJKsansfont{黑体}
-\setCJKmonofont{宋体}
+\setCJKmonofont{MS Mincho}
 \usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -22,12 +22,18 @@
 周明东 \par}
 \end{center}
 \end{titlepage}}
+\newcommand{\topcaption}{
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{10pt}
+\caption
+}
 \begin{document}
 	\frontmatter
 	\maketitle
 	\tableofcontents
 
 	\mainmatter
+<<<<<<< HEAD
 		\include{info}
 		\include{summary}
 		\include{skills}
@@ -40,4 +46,30 @@
 		\verbatiminput{Select.R}
 		\verbatiminput{blackcat.R}
 		\verbatiminput{booking.R}
+=======
+	\section{简单信息}
+		\input{info.tex}
+	\section{基本信息}
+		\input{summary.tex}
+	\section{技能}
+		\input{skills.tex}
+	\section{教育经历}
+		\input{educationexperience.tex}
+	\section{数据图作品展示}
+	以下作品使用的工具是R环境或R环境中的ggplot2包。
+		\begin{figure}
+		\begin{center}
+		\topcaption{条形图}
+		\includegraphics[scale=0.45]{eps/Rplot01}
+		\qquad
+		\includegraphics[scale=0.46]{eps/Rplot13}
+		\end{center}
+		\end{figure}
+		\begin{figure}
+		\begin{center}
+		\topcaption{箱线图}
+		\includegraphics[scale=0.3]{boplot.PNG}
+		\end{center}
+		\end{figure}
+>>>>>>> 8cb5a88710d229282c5a05b75119286809b29b01
 \end{document}
