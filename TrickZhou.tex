@@ -7,7 +7,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{pstricks}
-\usepackage{indetfirst}
+\usepackage{indentfirst}
 \hypersetup{colorlinks}
 \pagestyle{plain}
 \makeindex
@@ -28,27 +28,16 @@
 	\tableofcontents
 
 	\mainmatter
-	\section{简单信息}
-		\input{info.tex}
-	\section{基本信息}
-		\input{summary.tex}
-	\section{技能}
-		\input{skills.tex}
-	\section{教育经历}
-		\input{educationexperience.tex}
-	\section{数据图作品展示}
-		\begin{figure}
-		\begin{center}
-		\caption{条形图}
-		\includegraphics[scale=0.45]{Rplot01}
-		\qquad
-		\includegraphics[scale=0.46]{Rplot13}
-		\end{center}
-		\end{figure}
-		\begin{figure}
-		\begin{center}
-		\caption{箱线图}
-		\includegraphics[scale=0.3]{boplot.PNG}
-		\end{center}
-		\end{figure}
+		\include{info}
+		\include{summary}
+		\include{skills}
+		\include{educationexperience}
+		\include{graph}
+		\appendix
+		\include{code}
+		\verbatiminput{GetCode.R}
+		\verbatiminput{GetId.R}
+		\verbatiminput{Select.R}
+		\verbatiminput{blackcat.R}
+		\verbatiminput{booking.R}
 \end{document}
