@@ -39,7 +39,6 @@
 	\include{skills}
 	\include{educationexperience}
 	\include{xiangmu}
-	\include{workExperience}
 	%暂时去除
 	%\include{graph}
 	%\appendix
