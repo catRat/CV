@@ -1,49 +1,28 @@
-%include info.tex, summary.tex, skill.tex
+%input info.tex, summary.tex, skill.tex
 %educationexperience.tex graph.tex, code.tex
 \documentclass[a4paper]{article}
 \usepackage{xeCJK}
 \setCJKmainfont{宋体}
 \setCJKsansfont{黑体}
 \setCJKmonofont{黑体}
-\usepackage{verbatim}
-\usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{pstricks}
 \usepackage{indentfirst}
 \hypersetup{colorlinks}
-\pagestyle{plain}
-\makeindex
-\renewcommand{\maketitle}{\begin{titlepage}
-\begin{pspicture}(12, 9)
-\pspolygon*[linecolor=pink](0,0)(7,0)(7, 3)(0, 3)
-\end{pspicture}
-\begin{center}
-\sffamily{
-\linespread{2.0}\selectfont \Large
-周明东的个人简历 \par
-周明东 \par}
-\end{center}
-\end{titlepage}}
-\newcommand{\topcaption}{
-\setlength{\abovecaptionskip}{0pt}
-\setlength{\belowcaptionskip}{10pt}
-\caption
-}
+\usepackage[hmargin=1.25in,vmargin=1in]{geometry}
+\setlength{\parindent}{2em}
 
 \begin{document}
-	\maketitle
-	\tableofcontents
 
-	\include{info}
-	\include{summary}
-	\include{skills}
-	\include{educationexperience}
-	\include{xiangmu}
-	\include{workExperience}
+	\input{info}
+	%\input{summary}
+	\input{skills}
+	\input{xiangmu}
+	\input{workExperience}
+	\input{educationexperience}
 	%暂时去除
-	%\include{graph}
+	%\input{graph}
 	%\appendix
-	%\include{code}
+	%\input{code}
 	%\verbatiminput{GetCode.R}
 	%\verbatiminput{GetId.R}
 	%\verbatiminput{Select.R}
