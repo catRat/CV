@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.5.26)  11 DEC 2019 23:52
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.5.26)  19 DEC 2019 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -649,11 +649,11 @@ Package fontspec Info: Font family '黑体(0)' created for font '黑体' with op
 
 )
 (./skills.tex) (./xiangmu.tex) (./workexperience.tex)
-(./educationexperience.tex [1
-
-])
+(./educationexperience.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
- [2]
+ [1
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (./TrickZhou.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 31.
@@ -667,12 +667,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
  ) 
 Here is how much of TeX's memory you used:
- 21221 strings out of 492909
- 426502 string characters out of 6136299
- 535581 words of memory out of 5000000
- 25184 multiletter control sequences out of 15000+600000
+ 21187 strings out of 492909
+ 424561 string characters out of 6136299
+ 525581 words of memory out of 5000000
+ 25150 multiletter control sequences out of 15000+600000
  532826 words of font info for 41 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 42i,7n,66p,724b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,66p,410b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TrickZhou.pdf (2 pages).
+Output written on TrickZhou.pdf (1 page).
