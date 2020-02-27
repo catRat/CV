@@ -1,6 +1,0 @@
-\contentsline {section}{\numberline {1}姓名与通信}{2}{section.1}% 
-\contentsline {section}{\numberline {2}基本信息}{2}{section.2}% 
-\contentsline {section}{\numberline {3}技能}{2}{section.3}% 
-\contentsline {section}{\numberline {4}项目}{2}{section.4}% 
-\contentsline {section}{\numberline {5}工作经历}{3}{section.5}% 
-\contentsline {section}{\numberline {6}教育经历}{3}{section.6}% 
